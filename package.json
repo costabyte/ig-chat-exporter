@@ -1,0 +1,31 @@
+{
+    "name": "ig-chat-exporter",
+    "version": "1.0.0",
+    "description": "An Instagram DM archiver",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "dev": "tsx src/index.ts",
+        "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+        "@clack/prompts": "^1.0.1",
+        "axios": "^1.13.6",
+        "dotenv": "^16.6.1",
+        "instagram-private-api": "^1.46.1",
+        "re2": "^1.23.3"
+    },
+    "devDependencies": {
+        "@types/node": "^22.19.13",
+        "prettier": "^3.8.1",
+        "tsx": "^4.21.0",
+        "typescript": "^5.9.3"
+    },
+    "pnpm": {
+        "onlyBuiltDependencies": [
+            "esbuild",
+            "re2"
+        ]
+    }
+}
