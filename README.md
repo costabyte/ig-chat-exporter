@@ -15,7 +15,7 @@ pnpm install
 cp .env.example .env
 ```
 
-Export your Instagram cookies as JSON and save them to a file (e.g. `cookies.json`). The required cookies are `sessionid`, `csrftoken`, `ds_user_id`, `mid`, and `ig_did`.
+You must export your Instagram cookies as JSON and save them to a file (e.g. `cookies.json`). The required cookies are `sessionid`, `csrftoken`, `ds_user_id`, `mid`, and `ig_did`.
 
 ## Usage
 
@@ -25,11 +25,11 @@ pnpm dev
 
 The interactive wizard will walk you through selecting threads and configuration. You can also pre-fill values with environment variables as mentioned in the `.env.example` file.
 
-| Variable | Description |
-|---|---|
-| `IG_SESSION_FILE` | Path to session state file (created automatically) |
-| `IG_COOKIE_FILE` | Path to exported browser cookies |
-| `IG_OUTPUT_DIR` | Output directory for archives |
+| Variable | Description                                       |
+|---|---------------------------------------------------|
+| `IG_SESSION_FILE` | Path to session state file, created automatically |
+| `IG_COOKIE_FILE` | Path to exported browser cookies                  |
+| `IG_OUTPUT_DIR` | Output directory for archives                     |
 
 ## Output
 
